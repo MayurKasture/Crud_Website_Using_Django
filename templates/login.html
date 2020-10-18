@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main role="main">
+    <div class="jumbotron my-3">
+        <div class="container-fluid">
+            <form action="crud/" method="post">
+                {% csrf_token %}
+
+                <div class="wrap-input100 validate-input">
+                    <span class="focus-input100"></span>
+                    <span class="label-input100">Username</span>
+                    <input class="form-control" type="text" name="username123">
+                </div>
+
+                <div class="form-group my-4">
+                    <span class="focus-input100"></span>
+                    <span class="label-input100">Password</span>
+                    <input class="form-control" type="text" name="password123">
+                </div>
+
+
+<!--                {{ forms.as_U }}-->
+
+
+                <div class="form-group my-4">
+                    <span class="focus-input100"></span>
+                    <button class="btn btn-outline-dark">
+                        <a href="crud/">Login</a>
+						</button>
+                </div>
+
+<!--                <div class="form-group my-4">-->
+<!--                    <span class="focus-input100"></span>-->
+<!--                    <button type="submit" class="btn btn-primary">Login</button>-->
+<!--                </div>-->
+
+            </form>
+        </div>
+    </div>
+</main>
+
+<div class="container mx-5 my-3">
+    <h2 class="text-center alert alert-danger"> Login Safely And Securely.....! </h2>
+</div>
+
+{% endblock content %}
