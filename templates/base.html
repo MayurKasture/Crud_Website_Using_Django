@@ -21,18 +21,16 @@
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                <ul><li> <span class="nav-item"><a class="nav-link" href="/crud/">Crud</a></span> </li></ul>
 <!--                from chi line ahe ithe jasyachi tashi pest kara-->
                 <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=OPc_oMgjhpM">Web-site</a></li>
             </ul>
 
-<!--            <form action="/crud" method="post">-->
-<!--                <ul><li> <span class="nav-item"><a class="nav-link" href="/crud/">Crud</a></span> </li></ul>-->
-<!--&lt;!&ndash;                    <span class="nav-item"><a class="nav-link" href="/crud/">Crud</a></span>&ndash;&gt;-->
-<!--            </form>-->
+            <form action="/crud" method="post">
+                <ul class="navbar-nav mr-auto"><li><span class="nav-item"><a class="nav-link" href="/crud/">Project 1 - Crud</a></span></li></ul>
+            </form>
 
             <form class="form-inline my-2 my-lg-0">
-                <a class="navbar-brand">PYTHON PROJECTS</a>
+                <a class="navbar-brand">|| PYTHON PROJECTS</a>
 <!--                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
 <!--                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
             </form>
@@ -44,9 +42,9 @@
     {% block content %} {% endblock content %}
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{% static '../../assets/js/vendor/jquery-slim.min.js' %}"><\/script>')</script>
+    <script src="{% static '/assets/js/vendor/popper.min.js' %}"></script>
+    <script src="{% static '/dist/js/bootstrap.min.js' %}"></script>
 
 
 </body>
