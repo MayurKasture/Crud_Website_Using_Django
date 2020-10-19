@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    {% load static %}
+    <link rel="stylesheet" href="{% static 'crudapp/css/bootstrap.min.css' %}">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
     <title>Home Page</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="jumbotron.css" rel="stylesheet">
+    <link href="../../crudapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'crudapp/css/jumbotron.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -41,10 +41,9 @@
 
     {% block content %} {% endblock content %}
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="{% static '../../assets/js/vendor/jquery-slim.min.js' %}"><\/script>')</script>
-    <script src="{% static '/assets/js/vendor/popper.min.js' %}"></script>
-    <script src="{% static '/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'crudapp/js/popper.min.js' %}"></script>
+    <script src="{% static 'crudapp/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'crudapp/js/jquery.js' %}"></script>
 
 
 </body>

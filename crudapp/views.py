@@ -1,12 +1,15 @@
 from django.shortcuts import render,HttpResponseRedirect
-from .forms import StudentRegistration
-from .models import student
+from .forms import StudentRegistration, UserRegistration
+from .models import student, User
 import pyautogui
 
 
 # Create your views here.
+# def login(request):
+#     return render(request, 'login.html')
 def login(request):
-    return render(request, 'login.html')
+    form = UserRegistration()
+    return render(request, 'login.html', {'forms': form})
 
 
 
