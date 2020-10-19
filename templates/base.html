@@ -2,15 +2,15 @@
 <html lang="en">
 {% load static %}
 <head>
+    <title>Home Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="{% static 'crudapp/css/bootstrap.min.css' %}">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <title>Home Page</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
-    <link href="../../crudapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'crudapp/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'crudapp/css/jumbotron.css' %}" rel="stylesheet">
 </head>
 
@@ -39,12 +39,13 @@
     </nav>
 
 
-    {% block content %} {% endblock content %}
+    {% block content %}
 
     <script src="{% static 'crudapp/js/popper.min.js' %}"></script>
     <script src="{% static 'crudapp/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'crudapp/js/jquery.js' %}"></script>
 
+    {% endblock content %}
 
 </body>
 </html>

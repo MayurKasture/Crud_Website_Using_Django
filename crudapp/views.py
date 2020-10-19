@@ -1,6 +1,6 @@
 from django.shortcuts import render,HttpResponseRedirect
 from .forms import StudentRegistration, UserRegistration
-from .models import student
+from .models import student, User
 import pyautogui
 
 
