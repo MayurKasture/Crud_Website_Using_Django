@@ -1,12 +1,10 @@
 from django.shortcuts import render,HttpResponseRedirect
 from .forms import StudentRegistration, UserRegistration
-from .models import student, User
+from .models import student
 import pyautogui
 
 
 # Create your views here.
-# def login(request):
-#     return render(request, 'login.html')
 def login(request):
     form = UserRegistration()
     return render(request, 'login.html', {'forms': form})
@@ -94,7 +92,7 @@ def delete_data(request, id):
 #             return render(request, "login.html")
 #
 #     else:
-#         st1 = StudentRegistration()
+#         st1 = UserRegistration()
 #
 #     stud = User.objects.all()
 #     return render(request, 'crud.html', {'form': st1, 'showalldata': stud})
