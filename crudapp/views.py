@@ -58,7 +58,8 @@ def delete_data(request, id):
         delete_row_data = student.objects.get(pk=id)
         delete_row_data.delete()
         pyautogui.alert("Student Data Deleting Successful...!")
-        return HttpResponseRedirect('/crud/crud')
+        return HttpResponseRedirect('/crud/')
+        # return HttpResponseRedirect('/crud/crud')
 
 
 
